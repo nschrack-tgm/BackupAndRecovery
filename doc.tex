@@ -1,0 +1,51 @@
+\documentclass[12p]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{fancyhdr} %Package to configure headings and footer
+\usepackage{lastpage} %Needed to display last page (total amount of pages)
+\usepackage{listings}
+
+% pagelayout
+\usepackage[
+top    = 2.75cm,
+bottom = 2.00cm,
+left   = 2.50cm,
+right  = 2.00cm]{geometry}
+\setcounter{secnumdepth}{4}
+
+% header
+\pagestyle{fancy}
+\fancyhead[L]{\today}
+\fancyhead[R]{Backup und Recovery}
+
+%footer
+\fancyfoot[L]{Soyka, Schrack}
+\fancyfoot[C]{5AHIT}
+\fancyfoot[R]{Seite \thepage/\pageref{LastPage}}
+
+%title page
+\author{Wolfram Soyka, Nikolaus Schrack}
+\title{\Huge{Backup und Recovery}\\\Large{5AHIT}}
+\date{\today}
+
+%Glossary
+\usepackage{glossaries}
+\makeglossaries
+\newglossaryentry{mac}{name=MAC, description={Media Access Controll}}
+
+\begin{document}
+	\maketitle
+	
+	\newpage
+	\tableofcontents
+	
+	\newpage
+	\section{Instruction}
+	
+	
+\bibliographystyle{plain}
+\bibliography{Loadbalancing_Haidn_Schrack.bib}	
+\end{document}
+	
